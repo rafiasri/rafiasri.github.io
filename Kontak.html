@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgramWEB DataDiri</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="File.css">
+    <link rel="stylesheet" href="Beranda.html">
+    <link rel="stylesheet" href="Biodata.html">
+    <link rel="stylesheet" href="Dashboard.html">
+    <link rel="stylesheet" href="Kontak.html">
+    <link rel="stylesheet" href="Login.html">
+
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">EpiWeb_</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="Dashboard.html">Beranda</a></li>
+                    <li><a href="Biodata.html">Biodata</a></li>
+                    <li><a href="Kontak.html">Kontak</a></li>
+                    <li><a href="Beranda.html"><img src="Rafi1.png"class="foto-propil"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <!--untuk home-->
+        <section id="home" >
+            <div  class="container">
+                <div class="card-container">
+                    <div class="left">
+                        <div class="left-container">
+                            <h2>Tentang Kami</h2>
+                            <p>Website ini merupakan Website pribadi yang dimana untuk pelaksanaan Uts</p><br>
+                            <p>Jika ingin mengikuti saya, silahkan follow Medsos Saya, hehehhe</p>
+                            <div class="sosmed">
+                                <a class="tombol" href="https://www.facebook.com/rafi.asri.35/">
+                                    <i class="fab fa-facebook-f" ></i>
+                                </a>
+                                <a class="tombol" href="https://www.instagram.com/mhmmdrafi_04/">
+                                    <i class="fab fa-instagram" ></i>
+                                </a> 
+                                <a class="tombol" href="https://wa.me/qr/KADFUBA6E7N4N1">
+                                    <i class="fab fa-whatsapp" ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="right-container">
+                            <form>
+                                <h2>Hubungi Kami</h2>
+                                <input type="text" placeholder="Nama" ><br>
+                                <input type="text" placeholder="No. Hp"><br>
+                                <input type="text" placeholder="Alamat Email"><br>
+                                <textarea cols="30" rows="10" placeholder="Pesan"></textarea>
+                                <button type="submit" onclick="berhasil()" class="kirim">Kirim</button>
+                            </form>
+                            <script>
+                                var berhasil = () => alert ("Pesan berhasil di kirimkan")
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <input type="text" placeholder="Nama"><br>
+            <div id="copyright">
+                <div class="wrapper">&copy; 2022. <b>ePiWeb_</b> All Right Reserved</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

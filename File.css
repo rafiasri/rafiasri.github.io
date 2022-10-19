@@ -1,0 +1,392 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background: #EEE3CB;
+}
+.body-Kontak{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.wrapper{
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.logo a {
+    padding-left: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+    font-family: courier;
+    color: #42855B;
+}
+.foto-propil{
+    padding-top: 15px;
+    max-width: 45px;
+}
+.menu{
+    padding-right: 40px;
+    float: right;
+}
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #704F4F;
+    z-index: 1;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+    padding-left: 40px;
+}
+nav ul li a{
+    color: #42855B;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 15px 0px 15px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+a.tbl-biru{
+    background: #42855B;
+    border-radius: 20px;
+    padding-right: 40px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right:40px ;
+    padding: 15px 20px 15px 20px;
+    color: #D2D79F;
+    cursor: pointer;
+    font-weight: bold;
+}
+#home{
+    padding: 50px 0;
+    height: 80vh;
+    border: 1px;
+    background-image: url(banner1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home::after{
+    content:" ";
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#home h2{
+    color: #42855B;
+    padding: 20px 25px;
+}
+.container{
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25)
+    , 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-width: 370px;
+    min-height: 522px;
+}
+.kontak-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 25px;
+    width: 300px;
+    background-color: rgba(206, 177, 139, 0.7);
+    box-shadow: 0 0 10px rgba(255,255,255,.3);
+}
+.kontak-container h1{
+    text-align: left;
+    color: #42855B;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #42855B;
+}
+.kontak-container label{
+    text-align: left;
+    color: #42855B;
+}
+.kontak-container form input{
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #42855B;
+    color: #fff;
+    font-size: 20px;
+}
+.kontak-container form button{
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    background-color:#2979ff;
+    font-size: 18px;
+    color: #fafafa;
+}
+.card-container{
+    display: flex;
+}
+.left{
+    display: flex;
+    flex: 1;
+    height: 525px;
+    background-color: #EEE3CB;
+    justify-content: center;
+    align-items: center;
+    color: #704F4F;
+}
+.left p{
+    font-size: 0.9rem;
+}
+.left-container{
+    height: 50%;
+    width: 80%;
+    text-align: center;
+    line-height: 22px;
+}
+.left-container.sosmed{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.left-container.tombol{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    background: #42855B;
+    margin: 10px;
+    border-radius: 90%;
+    box-sizing: 0 5px 15px -5px #148F77;
+    overflow: hidden;
+    position: relative;
+    color: #42855B;
+}
+.left-container.tombol i{
+    transition: 0.2s linear;
+    font-size: 26px;
+    line-height: 90px;
+}
+.right{
+    display: flex;
+    flex: 1;
+    height: 525px;
+    background-color: #90B77D;
+    justify-content: center;
+    align-items: center;
+}
+.right-container{
+    width: 70%;
+    height: 80%;
+    text-align: center;
+}
+input, textarea{
+    z-index: 99999999;
+    background-color: #EEE3CB;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    font-size: 0.8rem;
+}
+input{
+    width: 230px;
+}
+textarea{
+    height: 90px;
+}
+input:focus, textarea:focus{
+    outline: 1px solid #704F4F;
+}
+button{
+    border-radius: 20px;
+    bottom: 1px solid #42855B;
+    background-color: #42855B;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in-out;
+}
+.form_username,.form_password{
+    background-color: #1A2226;
+    position: relative;
+    width: 170px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    border-bottom: 2px solid #0DB8DE;
+    margin-bottom: 20px;
+    color: #ECF0F5;
+}
+.btn-login{
+    position: relative;
+    left: 8px;
+}
+.error_msg{
+    font-family: monospace;
+    font-size: 12pt;
+    position: relative;
+    left: 5px;
+    display: none;
+    color: red;
+}
+.btn{
+    border-color: #0DB8DE;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.username_kosong,.password_kosong{
+    font-size: 12pt;
+    font-style:monospace;
+    left: 115px;
+    margin-bottom: 10px;
+    color: #0DB8DE;
+    position: relative;
+    display: none;
+
+}
+h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #42855B;
+}
+button:hover{
+    opacity: 0.7;
+}
+#datadiri h1{
+    padding: 20px 20px;
+}
+.heading{
+    text-align: center;
+    color: #704F4F;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 3rem;
+}
+.heading span{
+    color:#42855B;
+    text-transform: uppercase;
+}
+.kolom{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+.kolom .deskripsi{
+    padding: 0px 20px 20px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #704F4F;
+}
+#kontak{
+    background: #704F4F;
+    text-align: center;
+}
+#kontak .icons{
+    position: relative;
+    top: 50%;
+    transform: translateY(5%);
+    width: 100%;
+    text-align: center;
+}
+#kontak .icons a{
+    height: 2rem;
+    width: 2rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#5F6F94;
+    border:var(--border);
+    margin:.3rem;
+    border-radius: 50%;
+}
+#kontak .icons a i{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#kontak .icons .tombol{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #90B77D;
+    margin: 20px;
+    border-radius: 30%;
+    box-sizing: 15 5px 15px -5px #00000070;
+    overflow: hidden;
+    position: relative;
+    color: #42855B;
+}
+#kontak .icons a:hover{
+    background-color: #CDF0EA;
+    transition: 0.2% linear;;
+    font-size: 25px;
+    line-height: 90px;
+}
+#kontak .icons .tombol:honer i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+#kontak .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 1;
+    gap:1rem;
+}
+#kontak .links a{
+    padding:.7rem 2rem;
+    color:#42855B;
+    border:var(--border);
+    font-size: 1rem;
+}
+#kontak .links a:hover{
+    background:var(--main-color);
+}
+#copyright{
+    background: #A77979;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    margin-top: 10px;
+}
