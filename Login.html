@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgramWEB DataDiri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="File.css">
+    <link rel="stylesheet" href="Beranda.html">
+    <link rel="stylesheet" href="Biodata.html">
+    <link rel="stylesheet" href="Dashboard.html">
+    <link rel="stylesheet" href="Kontak.html">
+    <link rel="stylesheet" href="Login.html">
+</head>
+<body class="body-Kontak">
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">EpiWeb_</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="Beranda.html">Beranda</a></li>
+                    <li><a href="Login.html" class="tbl-biru">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <!--untuk home-->
+        <section id="home" >
+            <div  class="kontak-container">
+                    <h1>Login</h1>
+                    <form>
+                        <label>Username</label><br>
+                        <input type="text" class="form_username " id="username" autocomplete="off"><br>
+                        <label>Password</label><br>
+                        <input type="password" class ="form_password" id="password"><br>
+                        <div class="error_msg">Username atau Password anda salah</div>
+                        <div class="btn-login"><input type="button" class="btn" value="Login" onClick="login()"></div>
+                    </form>
+            </div>
+            <script language="JavaScript">
+                function login() {
+                    var user = document.getElementById("username").value;
+                    var pass = document.getElementById("password").value;
+                    var form_username = document.querySelector(".form_username");
+                    var form_password = document.querySelector(".form_password");
+                    var error_msg = document.querySelector(".error_msg");
+            
+                    if (user == "rafiasri" && pass == "1234") {
+                        window.location.href="Dashboard.html";
+                    } 
+                    else {
+                        form_username.style.border = "1px solid #f74040";
+                        form_password.style.border = "1px solid #f74040";
+                        error_msg.style.display = "inline-block";
+                        return false;
+                    }
+                    error_msg.style.display = "none";  
+                }
+            </script>
+        </section>
+        <section>
+            <div id="copyright">
+                <div class="wrapper">&copy; 2022. <b>ePiWeb_</b> All Right Reserved</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
